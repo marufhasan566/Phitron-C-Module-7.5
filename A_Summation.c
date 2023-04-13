@@ -1,19 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int N;
-    scanf("%d",&N);
-    int A[N];
-    int sum=0;
+    long long int N;
+    scanf("%lld",&N);
+    long long int A[N];
+    long long int sum=0;
     for(int i=0;i<N;i++){
-        scanf("%d",&A[i]);
+        scanf("%lld",&A[i]);
         sum=sum+A[i];
     }
     if(sum<-1){
-        printf("%d",(-1*sum));
+        printf("%lld",(-1*sum));
     }
     else{
-        printf("%d",sum);
+        printf("%lld",sum);
     }
     return 0;
 }
